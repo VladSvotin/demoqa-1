@@ -33,7 +33,7 @@ public class TestboxTests {
         $("#userEmail").setValue("Vlad@svot.com");
         $("#currentAddress").setValue("Klochkova");
         $("#permanentAddress").setValue("Sadovaya");
-        $("#submit").click();
+        $("#submit").scrollIntoView(true).click();
         $("#output").scrollIntoView(true).shouldHave(text("Vlad"), text("Vlad@svot.com"), text("Klochkova"), text("Sadovaya"));
         closeWebDriver();
     }
